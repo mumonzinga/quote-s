@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-
+import { VotingComponent} from '../app/voting/voting.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { QuoteDetailsComponent } from './quote-details/quote-details.component';
@@ -15,6 +15,7 @@ import { DateCounterPipe } from './date-counter.pipe';
     AppComponent,
     QuoteDetailsComponent,
     QuoteDisplayComponent,
+    VotingComponent,
     FormComponent,
     HighlightDirective,
     DateCounterPipe
