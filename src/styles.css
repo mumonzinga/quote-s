@@ -1,1 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css"
+.container-fluid {
+  background-color: https://www.pexels.com/photo/photo-of-assorted-letter-board-quote-hanged-on-wall-1742370/
+}

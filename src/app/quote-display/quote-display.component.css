@@ -10,7 +10,7 @@ h3 {
 
 .container-fluid {
   padding: 2%;
-  background-color: black;
+  
 }
 
 .individual-quote {
@@ -27,7 +27,7 @@ h3 {
 }
 
 .col-md-3,
-.col-md-8 {
+.col-md-7 {
   border: 1px solid grey;
   border-radius: 5px;
   margin-top: 5px;
@@ -40,7 +40,7 @@ h3 {
   background-color: rgba(255, 255, 255, 0.9);
 }
 
-.col-md-8 {
+.col-md-7 {
   background-image: url('https://www.pexels.com/photo/shallow-photography-of-life-is-short-enjoy-your-coffee-signage-888992/');
   background-size: cover;
   background-repeat: no-repeat;
