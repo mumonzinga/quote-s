@@ -1,40 +1,43 @@
+
 <div class="container-fluid">
-  <div class="row">
-    <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
-      <div class="form-group">
-        <label for="quote">Quote</label>
-        <textarea rows="4" class="form-control" id="quote" [(ngModel)]="newQuote.quote" name="quote" required></textarea>
+  <div class ="well">
+    <div class="row">
+      <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
+        <div class="form-group">
+          <label for="quote">Quote</label>
+          <textarea rows="4" class="form-control" id="quote" [(ngModel)]="newQuote.quote" name="quote" required #quote="ngModel"></textarea>
 
-        <div [hidden]="quote.valid || quote.pristine" class="alert alert-warning">
+          <div [hidden]="quote.valid || quote.pristine" class="alert alert-warning">
           <p>Quote is Required</p>
+          </div>
         </div>
-      </div>
-      <div class="form-group">
-        <label for="author">Author Name</label>
-        <input type="text" class="form-control" id="author" [(ngModel)]="newQuote.author" name="author" required>
+        <div class="form-group">
+          <label for="author">Author Name</label>
+          <input type="text" class="form-control" id="author" [(ngModel)]="newQuote.author" name="author" required #author="ngModel">
 
-        <div [hidden]="author.valid || author.pristine" class="alert alert-warning">
-          <p>Author Name is Required</p>
+          <div [hidden]="author.valid || author.pristine" class="alert alert-warning">
+            <p>Author Name is Required</p>
+          </div>
         </div>
-      </div>
-      <div class="form-group">
-        <label for="name">Uploaded by</label>
-        <input type="text" class="form-control" id="name" [(ngModel)]="newQuote.publisher" name="name" required>
+        <div class="form-group">
+          <label for="name">Uploaded by</label>
+          <input type="text" class="form-control" id="name" [(ngModel)]="newQuote.publisher" name="name" required #name="ngModel"> 
 
-        <div [hidden]="name.valid || name.pristine" class="alert alert-warning">
-          <p>Uploader's name is Required</p>
+          <div [hidden]="name.valid || name.pristine" class="alert alert-warning">
+            <p>Uploader's name is Required</p>
+          </div>
         </div>
-      </div>
-      <div class="form-group">
-        <label for="date">Upload Date</label>
-        <input type="text" class="form-control" id="date" required [(ngModel)]="newQuote.date" name="date" disabled>
+        <div class="form-group">
+          <label for="date">Upload Date</label>
+          <input type="text" class="form-control" id="date" required [(ngModel)]="newQuote.date" name="date" #date="ngModel" disabled>
 
-        <div [hidden]="date.valid || date.pristine" class="alert alert-warning">
-          <p>Upload Date is Required</p>
+          <div [hidden]="date.valid || date.pristine" class="alert alert-warning">
+            <p>Upload Date is Required</p>
+          </div>
         </div>
-      </div>
-      <button type="submit" class="btn">Contribute Quote</button>
-      <!-- <button type="reset" class="btn">Clear Quote</button> -->
-    </form>
+        <button type="submit" class="btn">Contribute Quote</button>
+          <!-- <button type="reset" class="btn">Clear Quote</button> -->
+      </form>
+    </div>
   </div>
 </div>
